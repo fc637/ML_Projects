@@ -5,7 +5,9 @@ import urllib.request
 import os
 
 # Use raw string to handle backslashes in Windows path
-file_path = r'C:\\Users\\fanis\\Documents\\ML_Projects\\NLP_project-Duplicate_Question_pair\\Duplicate_Question_Pair\\ML_model.pkl'
+#/workspaces/ML_Projects/NLP_project-Duplicate_Question_pair/Duplicate_Question_Pair/ML_model.pkl
+file_path ='/workspaces/ML_Projects/NLP_project-Duplicate_Question_pair/Duplicate_Question_Pair/ML_model.pkl'
+#'C:\\Users\\fanis\\Documents\\ML_Projects\\NLP_project-Duplicate_Question_pair\\Duplicate_Question_Pair\\ML_model.pkl'
 # local_filePath=r'C:\\Users\\fanis\\Downloads\\ML_model.pkl'
 url='https://drive.google.com/file/d/1JsrekAsDl7WrfgDwVErq7qxiT2FX7iMo/view?usp=sharing'
 # Load the model
@@ -28,7 +30,7 @@ q1 = st.text_input('Enter question 1')
 q2 = st.text_input('Enter question 2')
 
 if st.button('Find'):
-    query = features.query_point_creator(q1,q2)
+    query = features_1.query_point_creator(q1,q2)
     result = model.predict(query)[0]
 
     if result:

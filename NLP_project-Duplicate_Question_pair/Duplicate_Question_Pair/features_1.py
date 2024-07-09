@@ -5,19 +5,21 @@ from fuzzywuzzy import fuzz
 import pickle
 import numpy as np
 from scipy.spatial.distance import cosine
-# import gensim
+import gensim
 # from gensim.models import Word2Vec
 from nltk.tokenize import word_tokenize
 import nltk
 nltk.download('punkt')
+
 
 # nltk.download('stopwords')
 from nltk.corpus import stopwords
 nltk.download('stopwords')
 
 # Use raw string to handle backslashes in Windows path
-word2vec_file_path = 'C:\\Users\\fanis\\Documents\\ML_Projects\\NLP_project-Duplicate_Question_pair\\Duplicate_Question_Pair\\word2vec_model.pkl'
-
+word2vec_file_path ='/workspaces/ML_Projects/NLP_project-Duplicate_Question_pair/Duplicate_Question_Pair/word2vec_model.pkl' 
+# 'C:\\Users\\fanis\\Documents\\ML_Projects\\NLP_project-Duplicate_Question_pair\\Duplicate_Question_Pair\\word2vec_model.pkl'
+# /workspaces/ML_Projects/NLP_project-Duplicate_Question_pair/Duplicate_Question_Pair/word2vec_model.pkl
 word2vec_model = pickle.load(open(word2vec_file_path,'rb'))
 
 print("Wordo2Vec Model loaded successfully!")
