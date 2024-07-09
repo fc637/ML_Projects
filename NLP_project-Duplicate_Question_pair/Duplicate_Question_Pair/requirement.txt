@@ -1,0 +1,10 @@
+streamlit
+scipy==1.12.0
+scikit-learn==1.2.2
+beautifulsoup4
+nltk
+gensim
+fuzzywuzzy
+numpy
+pandas
+distance
