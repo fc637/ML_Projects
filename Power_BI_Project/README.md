@@ -1,0 +1,1 @@
+This folder contain all the projects releated to Power_BI and SQL .
