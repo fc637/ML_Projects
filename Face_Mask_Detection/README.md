@@ -1,0 +1,1 @@
+This project is a  implementation of a  self made Convolutional Neural Network (CNN) and vgg_19 for detecting whether a person is wearing a face mask or not. The model is trained on a dataset of images containing people with and without masks.
